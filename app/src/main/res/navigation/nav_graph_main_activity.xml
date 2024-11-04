@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main_activity"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.mtechsoft.bookapp.fragments.MainFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_mian">
+        <action
+            android:id="@+id/action_nav_dashboard_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_playsFragment"
+            app:destination="@id/playsFragment" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_poemNameFragment"
+            app:destination="@id/poemNameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mtechsoft.bookapp.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_chapterDetailFragment"
+            app:destination="@id/chapterDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chapterDetailFragment"
+        android:name="com.mtechsoft.bookapp.fragments.ChapterDetailFragment"
+        android:label="fragment_chapter_detail"
+        tools:layout="@layout/fragment_chapter_detail">
+        <action
+            android:id="@+id/action_chapterDetailFragment_to_quizCategoryFragment"
+            app:destination="@id/quizCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizCategoryFragment"
+        android:name="com.mtechsoft.bookapp.fragments.QuizCategoryFragment"
+        android:label="Quiz Level"
+        tools:layout="@layout/fragment_quiz_category">
+        <action
+            android:id="@+id/action_quizCategoryFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.mtechsoft.bookapp.fragments.QuizFragment"
+        android:label="Mcqs"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_quizFragment_to_quizCategoryFragment"
+            app:destination="@id/quizCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.mtechsoft.bookapp.fragments.HistoryFragment"
+        android:label="Result (Attempted MCQs)"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_detailSheetFragment"
+            app:destination="@id/detailSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailSheetFragment"
+        android:name="com.mtechsoft.bookapp.fragments.DetailSheetFragment"
+        android:label="Result's"
+        tools:layout="@layout/fragment_detail_sheet" >
+        <action
+            android:id="@+id/action_detailSheetFragment_to_answerSheetFragment"
+            app:destination="@id/answerSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerSheetFragment"
+        android:name="com.mtechsoft.bookapp.fragments.AnswerSheetFragment"
+        android:label="Answer Sheet"
+        tools:layout="@layout/fragment_answer_sheet" />
+    <fragment
+        android:id="@+id/playsFragment"
+        android:name="com.mtechsoft.bookapp.fragments.PlaysFragment"
+        android:label="Plays"
+        tools:layout="@layout/fragment_plays" >
+        <action
+            android:id="@+id/action_playsFragment_to_chapterDetailFragment"
+            app:destination="@id/chapterDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/poemNameFragment"
+        android:name="com.mtechsoft.bookapp.fragments.PoemNameFragment"
+        android:label="Poems"
+        tools:layout="@layout/fragment_poem_name" >
+        <action
+            android:id="@+id/action_poemNameFragment_to_chapterDetailFragment"
+            app:destination="@id/chapterDetailFragment" />
+    </fragment>
+</navigation>

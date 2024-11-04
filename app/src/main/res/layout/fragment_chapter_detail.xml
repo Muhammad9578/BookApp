@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChapterDetailFragment">
+
+  <include
+      android:id="@+id/ctoolbar"
+      layout="@layout/custom_chapters_detail_toolbar" />
+  <SearchView
+      android:id="@+id/SearchView"
+      android:layout_width="fill_parent"
+      android:layout_below="@+id/ctoolbar"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:iconifiedByDefault="false">
+
+    <requestFocus />
+  </SearchView>
+  <com.github.barteksc.pdfviewer.PDFView
+      android:layout_below="@+id/SearchView"
+      android:id="@+id/pdf4"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <TextView
+      android:layout_below="@id/SearchView"
+      android:id="@+id/tv_pageNumber"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_alignParentEnd="true"
+      android:gravity="center"
+      android:text="1/10" />
+
+  <!--<LinearLayout-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content">-->
+
+  <!--<ImageButton-->
+
+  <!--android:id="@+id/bPlay"-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content"-->
+  <!--android:background="@drawable/btn_selector_style"-->
+  <!--android:contentDescription="@string/todo"-->
+  <!--android:src="@drawable/ic_play_arrow_black_24dp" />-->
+
+  <!--<ImageButton-->
+  <!--android:id="@+id/bStop"-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content"-->
+  <!--android:layout_marginStart="3dp"-->
+  <!--android:background="@drawable/btn_selector_style"-->
+  <!--android:contentDescription="@string/todo"-->
+  <!--android:src="@drawable/ic_stop_black_24dp" />-->
+  <!--</LinearLayout>-->
+
+  <Button
+      android:visibility="gone"
+      android:id="@+id/btn_quiz"
+      android:layout_width="150dp"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:background="@drawable/btn_selector_style"
+      android:gravity="center"
+      android:text="@string/btn_start_quiz"
+      android:textColor="@color/colorWhite" />
+</RelativeLayout>

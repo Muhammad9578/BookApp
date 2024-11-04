@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_start_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/book_img1"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+  <TextView
+      android:id="@+id/tvQues"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:padding="10dp"
+      android:textColor="@color/colorGreen"
+      android:text="2. If you fill a glass to the brim with ice water and the ice melts, what will happen?" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/rgOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+      <RadioButton
+          android:id="@+id/option1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="8dp"
+          android:buttonTint="@color/colorGreen"
+          android:textColor="#000"
+          android:text="(A) The glass will over flow as the ice turns to water." />
+
+      <RadioButton
+          android:id="@+id/option2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:buttonTint="@color/colorGreen"
+          android:layout_weight="1"
+          android:layout_marginTop="8dp"
+          android:textColor="#000"
+          android:text="(B) The level of water in the glass will remain unchanged as the ice melts." />
+
+      <RadioButton
+          android:id="@+id/option3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:buttonTint="@color/colorGreen"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:textColor="#000"
+          android:text="(C) The water level will drop slightly as the ice melts." />
+
+      <RadioButton
+          android:id="@+id/option4"
+          android:layout_width="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="8dp"
+          android:layout_height="wrap_content"
+          android:buttonTint="@color/colorGreen"
+          android:textColor="#000"
+          android:text="(D) I'll never find out because I'll drink the water or walk away before anything happens." />
+
+
+    </RadioGroup>
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:visibility="gone"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:text="Answer"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:visibility="gone"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:text="submit"/>
+  </LinearLayout>
+
+</LinearLayout>

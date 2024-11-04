@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "803259613554",
+    "firebase_url": "https://bookapp-aafe5.firebaseio.com",
+    "project_id": "bookapp-aafe5",
+    "storage_bucket": "bookapp-aafe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803259613554:android:cb9dbde5b8ded8ac",
+        "android_client_info": {
+          "package_name": "com.mtechsoft.bookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803259613554-u529ma386ev0aj9mm1j35pvgp6uhjplu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3tpZYJ1_tMXqtlwAgfjs75WjkQ0rYdmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803259613554-u529ma386ev0aj9mm1j35pvgp6uhjplu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

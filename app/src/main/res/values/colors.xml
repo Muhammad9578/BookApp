@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //for toolbar,texts
+    <color name="colorPrimary">#000000</color>
+
+    //for status bar
+    <color name="colorPrimaryDark">#00574B</color>
+    //for button
+    <color name="colorAccent">#1DA1F2</color>
+
+    <color name="colorGolden">#FFAD8661</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorRed">#ed2a4a</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorGreen">#369743</color>
+    <color name="colorBrown">#8B4513</color>
+
+</resources>

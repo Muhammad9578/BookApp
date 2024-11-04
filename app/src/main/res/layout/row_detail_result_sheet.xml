@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_start_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="10dp"
+    android:background="#fff"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+  <TextView
+      android:id="@+id/tvQuest"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:padding="10dp"
+      android:text="2. If you fill a glass to the brim with ice water and the ice melts, what will happen?"
+      android:textColor="@color/colorGreen" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvOption1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:buttonTint="@color/colorGreen"
+          android:text="option 1"
+          android:textColor="#000" />
+
+      <ImageView
+          android:id="@+id/ivOp1"
+          android:layout_width="wrap_content"
+          android:src="@drawable/ic_check_black_24dp"
+          android:layout_height="match_parent"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvOption2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:buttonTint="@color/colorGreen"
+          android:text="option 2"
+          android:textColor="#000" />
+
+      <ImageView
+          android:id="@+id/ivOp2"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvOption3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:buttonTint="@color/colorGreen"
+          android:text="option 3"
+          android:textColor="#000" />
+
+      <ImageView
+          android:id="@+id/ivOp3"
+          android:layout_width="wrap_content"
+          android:src="@drawable/ic_clear_black_24dp"
+          android:layout_height="match_parent"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvOption4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_weight="1"
+          android:buttonTint="@color/colorGreen"
+          android:text="option 4"
+          android:textColor="#000" />
+
+      <ImageView
+          android:id="@+id/ivOp4"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          />
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textSize="16sp"
+        android:visibility="gone" />
+  </LinearLayout>
+
+</LinearLayout>

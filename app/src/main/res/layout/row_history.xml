@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/llItem"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_press_chapter_style"
+    android:elevation="5dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:gravity="center"
+    android:layout_marginTop="3dp"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/tvChapresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimary"
+        android:text="chap 1 Result"
+        android:textSize="@dimen/text_size_normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorRed"/>
+
+</LinearLayout>
